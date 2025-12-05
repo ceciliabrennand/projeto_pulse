@@ -40,13 +40,21 @@ header > nav{
     display: flex;
     flex-flow: row nowrap;
     align-content: center;
+    transform: translateY(-5%);
 }
 
 header > nav > a{
     text-decoration: none;
     color: var(--cor1);
     font-weight: bold;
-    padding: 20px;
+    margin: 20px;
+}
+
+header > nav > a#sign-up{
+    border: 2px solid var(--cor1);
+    padding: 6px 15px;
+    box-sizing: border-box;
+    margin: 14px 20px 14px 20px;
 }
 
 header > nav > a:hover{
