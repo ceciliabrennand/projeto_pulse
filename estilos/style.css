@@ -26,13 +26,14 @@ header{
     flex-flow: row wrap;
     align-content: center;
     justify-content: space-between;
+    background-color: var(--cor5);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.138);
     height: 150px;
     color: var(--cor1);
-    
 }
 
 header > h1{
-    font-size: 2.5em;
+    font-size: 2.8em;
     padding-left: 20px;
 }
 
@@ -59,4 +60,37 @@ header > nav > a#sign-up{
 
 header > nav > a:hover{
     color: var(--cor4);
+}
+
+div#inicio > h1{
+    margin: 20px;
+    font-size: 3em;
+}
+
+div#inicio > p{
+    margin: 20px;
+    padding-top: 25px;
+    font-size: 1.1em;
+    line-height: 1.7em;
+}
+
+main > article#basic > h3{
+    color: var(--cor1);
+    font-size: 1.3em;
+    margin: 20px;
+    padding-left: 10px;
+}
+
+main > article#basic > ul > li{
+    margin: 5px 20px 5px 63px;
+    color: rgba(0, 0, 0, 0.736);
+}
+
+main > article#basic > p{
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.736);
+}
+
+main > article#basic > p > span.basic{
+    text-decoration: underline;
 }
