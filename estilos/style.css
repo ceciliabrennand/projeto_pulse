@@ -89,8 +89,48 @@ main > article#basic > ul > li{
 main > article#basic > p{
     margin: 20px;
     color: rgba(0, 0, 0, 0.736);
+    line-height: 1.5em;
 }
 
 main > article#basic > p > span.basic{
     text-decoration: underline;
+}
+
+main > article#business{
+    background-color: var(--cor5);
+    margin: 20px;
+    border: 1px solid var(--cor1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+main > article#business > p#recommended{
+    height: 30px;
+    background-color: var(--cor1);
+    color: var(--cor5);
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+main > article#business div > h2{
+    color: var(--cor1);
+    margin: 10px 10px 0px 15px;
+    font-size: 2.2em;
+}
+
+main > article#business div > h3{
+    padding: 0px 0px 20px 20px;
+    color: grey;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+main > article#business > p{
+    
+}
+
+main > article#business > ul{
+    list-style-position: inside;
+    list-style-type: circle;
 }
