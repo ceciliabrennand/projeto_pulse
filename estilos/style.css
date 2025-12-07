@@ -43,6 +43,7 @@ header > nav{
     justify-content: center;
     align-content: center;
     transform: translateY(-5%);
+    margin-right: 30px;
 }
 
 header > nav > a{
@@ -56,7 +57,7 @@ header > nav > a#sign-up{
     border: 2px solid var(--cor1);
     padding: 6px 15px;
     box-sizing: border-box;
-    margin: 0px 20px 14px 20px;
+    margin: 0px 0px 14px 20px;
 }
 
 header > nav > a:hover{
@@ -261,11 +262,78 @@ div#faq > article{
 }
 
 div#faq > article > h2{
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 div#faq > article > p{
     color: var(--cor7);
     font-size: 1.1em;
     line-height: 25px;
+}
+
+footer{
+    background-color: var(--cor4);
+}
+
+footer > div{
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+
+footer > div > img{
+    width: 150px;
+    margin: auto;
+}
+
+footer > div > div.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2));
+    height: 50px;
+}
+
+footer > div > div.botao > a{
+    color: var(--cor4);
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+footer > div.nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+footer > div.nav > nav{
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 100px;
+}
+
+footer > div.nav > nav > h3{
+    color: var(--cor6);
+}
+
+footer > div.nav > nav > a{
+    color: var(--cor2);
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 0px;
+}
+
+footer > div.nav > nav > a:hover{
+    color: var(--cor6);
+}
+
+footer > p{
+    color: rgb(128, 128, 128);
+    font-size: 0.75em;
+    padding: 20px;
+    line-height: 18px;
 }
