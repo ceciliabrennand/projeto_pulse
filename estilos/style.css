@@ -9,6 +9,7 @@
     --cor4: #080c16;
     --cor5: #d6dae5;
     --cor5: #fcfcfc;
+    --cor6: rgba(0, 0, 0, 0.705);
 }
 
 *{
@@ -27,7 +28,7 @@ header{
     align-content: center;
     justify-content: space-between;
     background-color: var(--cor5);
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.138);
+    box-shadow: 1px 1px 1px var(--cor6);
     height: 150px;
     color: var(--cor1);
 }
@@ -83,12 +84,12 @@ main > article#basic > h3{
 
 main > article#basic > ul > li{
     margin: 5px 20px 5px 63px;
-    color: rgba(0, 0, 0, 0.736);
+    color: var(--cor6);
 }
 
 main > article#basic > p{
     margin: 20px;
-    color: rgba(0, 0, 0, 0.736);
+    color: var(--cor6);
     line-height: 1.5em;
 }
 
@@ -96,15 +97,19 @@ main > article#basic > p > span.basic{
     text-decoration: underline;
 }
 
-main > article#business{
+main > article#business, article#extra{
     background-color: var(--cor5);
     margin: 20px;
     border: 1px solid var(--cor1);
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     overflow: hidden;
 }
 
-main > article#business > p#recommended{
+main > article#business > h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 30px;
     background-color: var(--cor1);
     color: var(--cor5);
@@ -113,13 +118,13 @@ main > article#business > p#recommended{
     font-size: 0.8em;
 }
 
-main > article#business div > h2{
+main > article div > h2{
     color: var(--cor1);
     margin: 10px 10px 0px 15px;
     font-size: 2.2em;
 }
 
-main > article#business div > h3{
+main > article div > h3{
     padding: 0px 0px 20px 20px;
     color: grey;
     font-weight: normal;
@@ -127,10 +132,59 @@ main > article#business div > h3{
 }
 
 main > article#business > p{
-    
+    margin: 20px 18px;
+    font-size: 0.8em;
+    font-weight: bolder;
+    color: var(--cor6);
 }
 
 main > article#business > ul{
     list-style-position: inside;
-    list-style-type: circle;
+    list-style: none;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+main > article#business > ul > li{
+    padding: 0px 8px 15px 15px;
+    position: relative;
+}
+
+main > article#business > ul > li::before{
+    content: "\2714";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--cor1);
+    font-size: 15px;
+    margin-left: -9px;
+}
+
+main > article#business > div.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor2);
+    height: 50px;
+    text-align: center;
+    margin: 20px;
+}
+
+main > article#business > div.botao > a{
+    width: 100%;
+    color: var(--cor6);
+    font-weight: bold;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+main > article#business > div.botao:hover > a{
+    color: var(--cor4);
+}
+
+main > article div > h2{
+    color: var(--cor1);
+    margin: 10px 10px 0px 15px;
+    font-weight: normal;
+    font-size: 2.2em;
 }
