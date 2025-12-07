@@ -8,8 +8,8 @@
     --cor3: #eafaf1;
     --cor4: #080c16;
     --cor5: #d6dae5;
-    --cor5: #fcfcfc;
-    --cor6: rgba(0, 0, 0, 0.705);
+    --cor6: #fcfcfc;
+    --cor7: rgba(0, 0, 0, 0.705);
 }
 
 *{
@@ -27,8 +27,8 @@ header{
     flex-flow: row wrap;
     align-content: center;
     justify-content: space-between;
-    background-color: var(--cor5);
-    box-shadow: 1px 1px 1px var(--cor6);
+    background-color: var(--cor6);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.133);
     height: 150px;
     color: var(--cor1);
 }
@@ -84,21 +84,21 @@ main > article#basic > h3{
 
 main > article#basic > ul > li{
     margin: 5px 20px 5px 63px;
-    color: var(--cor6);
+    color: var(--cor7);
 }
 
 main > article#basic > p{
     margin: 20px;
-    color: var(--cor6);
+    color: var(--cor7);
     line-height: 1.5em;
 }
 
-main > article#basic > p > span.basic{
-    text-decoration: underline;
+main > article#basic > p > a.basic{
+    color: var(--cor4);
 }
 
 main > article#business, article#extra{
-    background-color: var(--cor5);
+    background-color: var(--cor6);
     margin: 20px;
     border: 1px solid var(--cor1);
     border-top-left-radius: 8px;
@@ -112,7 +112,7 @@ main > article#business > h4{
     align-items: center;
     height: 30px;
     background-color: var(--cor1);
-    color: var(--cor5);
+    color: var(--cor6);
     text-align: center;
     font-weight: bold;
     font-size: 0.8em;
@@ -131,26 +131,30 @@ main > article div > h3{
     font-size: 1.5em;
 }
 
-main > article#business > p{
+main > article#business > p,
+main > article#extra> p{
     margin: 20px 18px;
     font-size: 0.8em;
     font-weight: bolder;
-    color: var(--cor6);
+    color: var(--cor7);
 }
 
-main > article#business > ul{
+main > article#business > ul,
+main > article#extra > ul{
     list-style-position: inside;
     list-style: none;
     margin-left: 20px;
     padding-left: 10px;
 }
 
-main > article#business > ul > li{
+main > article#business > ul > li,
+main > article#extra > ul > li{
     padding: 0px 8px 15px 15px;
     position: relative;
 }
 
-main > article#business > ul > li::before{
+main > article#business > ul > li::before,
+main > article#extra > ul > li::before{
     content: "\2714";
     position: absolute;
     left: 0;
@@ -160,7 +164,8 @@ main > article#business > ul > li::before{
     margin-left: -9px;
 }
 
-main > article#business > div.botao{
+main > article#business > div.botao,
+main > article#extra > div.botao{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,19 +175,40 @@ main > article#business > div.botao{
     margin: 20px;
 }
 
-main > article#business > div.botao > a{
+main > article#business > div.botao > a,
+main > article#extra > div.botao > a{
     width: 100%;
-    color: var(--cor6);
+    color: var(--cor7);
     font-weight: bold;
     font-size: 1.3em;
     text-decoration: none;
 }
 
-main > article#business > div.botao:hover > a{
+main > article#business > div.botao:hover > a,
+main > article#extra > div.botao:hover > a{
     color: var(--cor4);
 }
 
-main > article div > h2{
+main > article#extra{
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+main > article#extra > h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #d6dae56e;
+    color: var(--cor7);
+    height: 80px;
+    font-size: 0.9em;
+    font-weight: normal;
+    padding: 0px 12px;
+}
+
+main > article#extra > div > h2{
     color: var(--cor1);
     margin: 10px 10px 0px 15px;
     font-weight: normal;
