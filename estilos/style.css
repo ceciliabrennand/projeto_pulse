@@ -149,8 +149,9 @@ main > article#extra > ul{
 
 main > article#business > ul > li,
 main > article#extra > ul > li{
-    padding: 0px 8px 15px 15px;
+    padding: 0px 12px 15px 8px;
     position: relative;
+    color: var(--cor7);
 }
 
 main > article#business > ul > li::before,
@@ -213,4 +214,58 @@ main > article#extra > div > h2{
     margin: 10px 10px 0px 15px;
     font-weight: normal;
     font-size: 2.2em;
+}
+
+div#depoimento{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+}
+
+div#depoimento > img{
+    width: 90px;
+    border: 1px 1px white;
+    border-radius: 50%;
+    margin: 50px 0px 20px 0px
+}
+
+div#depoimento > p{
+    font-size: 1.5em;
+    margin: 0px 20px 20px 20px;
+    text-align: center;
+    line-height: 35px;
+
+}
+
+div#depoimento > p#marca{
+    color: var(--cor1);
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+div#faq{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+}
+
+div#faq > h1{
+    padding: 40px 30px 40px 25px;
+    font-size: 2.3em;
+}
+
+div#faq > article{
+    padding: 0px 30px 40px 25px;
+}
+
+div#faq > article > h2{
+    font-size: 1.3em;
+}
+
+div#faq > article > p{
+    color: var(--cor7);
+    font-size: 1.1em;
+    line-height: 25px;
 }
