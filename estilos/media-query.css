@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #00ad6a;
+    --cor2: #1fe374;
+    --cor3: #eafaf1;
+    --cor4: #080c16;
+    --cor5: #d6dae5;
+    --cor6: #fcfcfc;
+    --cor7: rgba(0, 0, 0, 0.705);
+}
+
+@media screen and (min-width: 768px) {
+    header{
+        background-color: var(--cor3);
+        box-shadow: none;
+    }
+
+    header > nav{
+        transform: translateY(8px)
+    }
+
+    div#inicio{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    div#inicio > h1{
+        font-size: 3.5em;
+        flex-basis: 500px;
+        text-align: center;
+    }
+
+    div#inicio > p{
+        flex-basis: 600px;
+        text-align: center;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    main{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}

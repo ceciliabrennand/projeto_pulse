@@ -41,7 +41,7 @@ header > img{
 header > nav{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-content: center;
     transform: translateY(-5%);
     margin-right: 30px;
