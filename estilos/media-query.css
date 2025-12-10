@@ -16,6 +16,11 @@
         box-shadow: none;
     }
 
+    header > img{
+        flex-basis: 150px;
+        padding-left: 40px;
+    }
+
     header > nav{
         transform: translateY(8px)
     }
