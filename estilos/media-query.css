@@ -10,7 +10,7 @@
     --cor7: rgba(0, 0, 0, 0.705);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1060px) {
     header{
         background-color: var(--cor3);
         box-shadow: none;
@@ -100,4 +100,15 @@
         max-width: 800px;
     }
 
+    div#faq{
+        flex-flow: row wrap;
+    }
+
+    div#faq > h1{
+        flex-basis: 100vw;
+    }
+
+    div#faq > article{
+        flex-basis: 400px;
+    }
 }
