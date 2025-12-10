@@ -95,4 +95,9 @@
         margin-left: 0px;
         height: 600px;
     }
+
+    div#depoimento > p{
+        max-width: 800px;
+    }
+
 }
