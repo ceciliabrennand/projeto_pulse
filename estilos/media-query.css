@@ -115,6 +115,7 @@
 
     div#faq{
         flex-flow: row wrap;
+        justify-content: center;
     }
 
     div#faq > h1{
@@ -156,6 +157,10 @@
 @media screen and (min-width: 1200px) {
     main > article#business, article#extra{
         flex-basis: 400px;
+    }
+
+    footer > div.nav{
+        flex-basis: 700px;
     }
     
 }
