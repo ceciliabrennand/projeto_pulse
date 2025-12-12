@@ -86,6 +86,7 @@
     main > article#business > p,
     main > article#extra > p{
         order: 1;
+        text-align: center;
     }
 
     main > article#business > ul,
@@ -102,6 +103,11 @@
     main > article#extra > div.botao{
         order: 0;
         margin: 0 70px;
+    }
+
+    main > article#business > div.botao:hover > a,
+    main > article#extra > div.botao:hover > a{
+        font-size: 1.4em;
     }
 
     main > article#extra{
