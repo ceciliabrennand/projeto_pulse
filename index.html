@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 <body>
     <header>
@@ -21,7 +21,21 @@
             <a href="#">Blog</a>
             <a href="#" id="sign-up">Sign Up</a>
         </nav>
+
+        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#00ad6a" id="barramenu" onclick="clicar()"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>
+
     </header>
+
+    <div id="menu">
+        <nav>
+            <a href="#">Features</a>
+            <a href="#">Customer Stories</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+            <a href="#" id="sign-up">Sign Up</a>
+        </nav>
+        <div class="botao"><a href="#">Sign up for a free 30-day trial</a></div>
+    </div>
 
     <div id="inicio">
         <h1>
@@ -153,5 +167,13 @@
         <p>2019 Pulseapp.com, Inc. All Rights Reserved | Terms of Use | Privacy Policy | EU Privacy <br>
         Pulse is made by Simple Focus. We also make Ballpark, Sifter, and Curated.</p>
     </footer>
+
+    <script>
+        function clicar() {
+            var menuzinho = window.document.getElementById('menu')
+            menuzinho.style.display = 'flex'
+        }
+    </script>
+
 </body>
 </html>

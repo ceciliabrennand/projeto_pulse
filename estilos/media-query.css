@@ -22,7 +22,16 @@
     }
 
     header > nav{
-        transform: translateY(8px)
+        display: flex;
+        margin-right: 30px;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-content: center;
+        transform: translateY(8px);
+    }
+
+    header > svg#barramenu{
+        display: none;
     }
 
     div#inicio{
