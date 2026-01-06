@@ -47,6 +47,11 @@ header > svg#barramenu{
    padding-right: 15px;
 }
 
+header > svg#barramenu:hover{
+    cursor: pointer;
+    fill: var(--cor2);
+}
+
 header > nav > a{
     text-decoration: none;
     color: var(--cor1);

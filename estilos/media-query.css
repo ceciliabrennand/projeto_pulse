@@ -34,6 +34,10 @@
         display: none;
     }
 
+    div#menu{
+    display: none;
+    }
+
     div#inicio{
         display: flex;
         flex-flow: row wrap;
