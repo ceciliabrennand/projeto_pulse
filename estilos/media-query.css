@@ -38,6 +38,14 @@
     display: none;
     }
 
+    div#menu > nav{
+        display: none;
+    }
+
+    div#menu > div.botao{
+        display: none;
+    }
+
     div#inicio{
         display: flex;
         flex-flow: row wrap;
